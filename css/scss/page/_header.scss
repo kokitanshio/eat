@@ -1,0 +1,39 @@
+header{
+  background-color: #bbe4ea;
+  height: 200px;
+  width: 100%;
+  @include mq{
+    height: 250px;
+  }
+  .header_inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    @include inner;
+    #seacret{
+      cursor: pointer;
+    }
+    h1{
+      position: relative;
+      @include font(30);
+      @include mq{
+        @include font(35);
+      }
+      .click{
+        position: absolute;
+        color: red;
+        @include font(10);
+        top: -10px;
+        left: 0;
+        display: none;
+      }
+      span{
+        padding: 0 10px;
+        strong{
+          color: #fa8072;
+        }
+      }
+    }
+  }
+}

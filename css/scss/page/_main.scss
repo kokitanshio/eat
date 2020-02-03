@@ -1,0 +1,31 @@
+.main{
+  padding-top: 30px;
+  min-height: 100%;
+  height: auto;
+  background: linear-gradient(45deg, #ff7f50 25%, transparent 25%, transparent 75%, #ff7f50 75%),
+  linear-gradient(45deg, #ff7f50 25%, transparent 25%, transparent 75%, #ff7f50 75%);
+  background-color: #f0e68c;
+  background-size: 150px 150px;
+  background-position: 0 0, 75px 75px;
+  &_inner{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s;
+    @include inner;
+    input{
+      @include input;
+    }
+    select{
+      @include select;
+    }
+    #btn{
+      @include btn;
+    }
+    .form_name,
+    .form_food{
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0;
+    }
+  }
+}

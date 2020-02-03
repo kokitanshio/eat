@@ -1,0 +1,10 @@
+@mixin btn{
+  background-color: #bbe4ea;
+  font-weight: bold;
+  border:  none;
+  &:hover{
+    cursor: pointer;
+    background-color: #1e90ff;
+    color: white;
+  }
+}

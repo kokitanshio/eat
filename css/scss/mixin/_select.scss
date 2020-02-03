@@ -1,0 +1,21 @@
+@mixin select{
+  height: 45px;
+  @include font(16);
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 20px;
+  &:before{
+    display: block;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

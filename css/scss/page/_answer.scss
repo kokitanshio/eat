@@ -1,0 +1,19 @@
+.answer{
+  .bar{
+    display: block;
+    content: '';
+    width: 100%;
+    border-bottom: 1px dashed #000;
+    margin: 15px 0;
+  }
+  li{
+    padding-top: 15px;
+    border-bottom: 1px solid #aaa;
+    b{
+      padding-left: 10px;
+    }
+    span{
+      padding-left: 10px;
+    }
+  }
+}

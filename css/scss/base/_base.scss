@@ -1,0 +1,43 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+
+html{
+  height: 100%;
+  width: 100%;
+  font-size: 62.5%;
+  font-family: 'Montserrat', 'Yu Gothic', sans-serif;
+}
+body{
+  height: 100%;
+  width: 100%;
+  @include font(20);
+  font-family: 'M PLUS 1p', sans-serif;
+  color: #222;
+  background-color: #F3F3F3;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p, 
+ul{
+margin: 0;
+padding: 0;
+}
+
+a,
+a:hover,
+a:focus {
+color: inherit; 
+cursor: pointer;
+}
